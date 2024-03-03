@@ -37,7 +37,7 @@ function People() {
     fetchPeople();
   }, [planetId]);
   return (
-    <>
+    <div className="planetParent">
       {residents === null ? (
         <p> loading.... </p>
       ) : residents.length > 0 ? (
@@ -91,7 +91,7 @@ function People() {
       ) : (
         <p> No residents found </p>
       )}
-    </>
+    </div>
   );
 }
 

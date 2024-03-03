@@ -7,9 +7,16 @@
 }
 
 
-html, body {
+html, body, #root {
   height: 100%;
   margin: 0; 
   padding: 0; 
 }
 
+
+.toggleButton {
+  flex-basis: 100%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}

@@ -18,12 +18,13 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="parent relative min-h-screen">
-      <button onClick={() => setDarkMode(!darkMode)}
-      className="absolute top-0 m-4 z-10">
+    <div className="parent">
+      <div className="toggleButton">
+        <button onClick={() => setDarkMode(!darkMode)}>
          { darkMode ? <Sun /> : <Moon /> } 
-      </button>
-      <Routes>
+        </button>
+      </div>
+      <Routes >
         <Route path="/" element={<HomePage />} />
         <Route path="/planets" element={<Planets />} />
         <Route path="/people/:planetId" element={<People />} />
